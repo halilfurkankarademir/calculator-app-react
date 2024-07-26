@@ -13,7 +13,7 @@ const Calculator = () => {
     if (e.key === "Enter") {
       e.preventDefault();
       calculateResult();
-    } else if (e.key >= "0" && e.key <= "9") {
+    } else if (e.key >= "0" && e.key <= "9" || e.key===".") {
       appendToCurrentInput(e.key);
     } else if (e.key === "+") {
       setOperator("+");
